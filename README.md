@@ -7,7 +7,7 @@ This project is neatly designed and built to demonstrate the use of Node.js and 
 1. **ToDo Bot** - A user can enter and save todo infomation in the predefined format with task and date. The user can then edit it using a webview opened inside Line. There is also the built-in scheduled notification system to alert users.
 
 ### Live Demo
-To provide the live demo, the application is deployed to AWS Beanstalk with AWS-RDS backed Postgresql database. It's webview todo app is written using **React.js** you can find the sub project here. and it is deployed to web-hosting enabled S3 bucket.
+To provide the live demo, the application is deployed to AWS Beanstalk with AWS-RDS backed Postgresql database. It's webview todo app is written using **React.js** you can find the sub project here https://github.com/woraphol-j/react-todo. and it is deployed to web-hosting enabled S3 bucket.
 
 #### QR code for Dictionary bot<br/>
 ![dictbot](docs/img/dict_qr.png)
