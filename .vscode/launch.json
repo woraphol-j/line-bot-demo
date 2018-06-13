@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to app",
+            "type": "node",
+            "request": "attach",
+            "protocol": "inspector",
+            "port": 9229,
+            "address": "localhost",
+            "restart": true,
+            "localRoot": "${workspaceRoot}",
+            "remoteRoot": "/usr/src/app"
+        },
+        {
+            "name": "Debug unit test",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "stopOnEntry": false,
+            "args": [
+                "--no-timeouts",
+                "--colors",
+                "--recursive",
+            ],
+            "runtimeExecutable": null,
+            "env": {
+                "NODE_ENV": "test"
+            }
+        },
+    ]
+}
