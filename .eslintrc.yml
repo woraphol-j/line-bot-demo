@@ -1,0 +1,7 @@
+extends: airbnb
+env:
+  es6: true
+  node: true
+  mocha: true
+rules:
+  prefer-error-callback: 0
