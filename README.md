@@ -34,8 +34,11 @@ Due to the time constraint, this project is quickly built to demonstrate the use
   - It should not allow setting past date and time.
   - It should not allow sending other types of message such as image.
   - The error handling can be improved by creating a common middleware that handles it specifically as opposed to putting the logic all over the place in the controller modules.
-#### 2. Add more test coverage.
+#### 2. Add more test coverage
   - Add more unit tests for other library modules.
   - Add integration tests.
 #### 3. Split model between user and tasks
   - Currently in order to get a user, the tasks table has to be probed. It might be a better idea to create a new user the first time the server recieves the request from that particular user.
+#### 4. Use specific timezone for each user
+#### 5. Use short-lived token instead of userId for the todo webview app to interact with the bot API server
+#### 6. Use dedicated caching server rather than node-cache module
