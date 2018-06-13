@@ -1,0 +1,26 @@
+app:
+  port: 8080
+logger:
+  level: debug
+database:
+  host: db
+  name: postgres
+  username: postgres
+  password:
+dict:
+  ratelimit: 60:minute
+  oxford:
+    appId: appId
+    appKey: appKey
+  line:
+    channelAccessToken: channelAccessToken
+    channelSecret: channelSecret
+todo:
+  webapp:
+    domain: http://localhost:3000
+  line:
+    channelAccessToken: channelAccessToken
+    channelSecret: channelSecret
+  worker:
+    crons: '45 22 * * *,50 22 * * *'
+    timezone: Asia/Bangkok

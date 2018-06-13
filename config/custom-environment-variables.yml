@@ -1,0 +1,27 @@
+app:
+  port: APP_PORT
+logger:
+  level: LOGGER_LEVEL
+database:
+  host: DATABASE_HOST
+  name: DATABASE_NAME
+  username: DATABASE_USERNAME
+  password: DATABASE_PASSWORD
+dict:
+  ratelimit: DICT_RATELIMIT
+  oxford:
+    appId: DICT_OXFORD_APP_ID
+    appKey: DICT_OXFORD_APP_KEY
+  line:
+    channelAccessToken: DICT_LINE_CHANNEL_ACCESS_TOKEN
+    channelSecret: DICT_LINE_CHANNEL_SECRET
+todo:
+  webapp:
+    domain: TODO_WEBAPP_DOMAIN
+  line:
+    channelAccessToken: TODO_LINE_CHANNEL_ACCESS_TOKEN
+    channelSecret: TODO_LINE_CHANNEL_SECRET
+  worker:
+    crons: TODO_WORKER_CRONS
+    timezone: TODO_WORKER_TIMEZONE
+
