@@ -1,0 +1,30 @@
+version: '3'
+services:
+  api:
+    image: api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: [
+      "npm",
+      "run",
+      "dev"
+    ]
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - "8080:8080"
+      - "9229:9229"
+    environment:
+      - NODE_ENV=development
+      - DATABASE_HOST=db
+      - DATABASE_NAME=postgres
+      - DATABASE_USERNAME=postgres
+    links:
+      - db
+  db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./pgdata:/var/lib/postgresql
