@@ -27,6 +27,12 @@ To provide the live demo, the application is deployed to AWS Beanstalk with AWS-
 ```bash
 docker-compose up -d
 ```
+### Test
+Run the following command to execute test:
+```bash
+npm test
+```
+
 
 ### Room for improvement
 Due to the time constraint, this project is quickly built to demonstrate the use of Node.js and its ecosystem to develop a chat bot application. Although the project is production-ready and fully functional, there are still some parts that can be improved as follows:
